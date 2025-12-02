@@ -1,0 +1,46 @@
+# Terraform / OpenTofu files
+.terraform/
+.terraform.lock.hcl
+
+# State files (never commit these!)
+terraform.tfstate
+terraform.tfstate.backup
+tofu.tfstate
+tofu.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Plan output files
+*.tfplan
+*.tfplan.json
+
+# Override files (local secrets, personal tweaks)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local variables (often contain secrets or machine-specific paths)
+*.tfvars
+*.tfvars.json
+example.tfvars
+
+# VS Code / JetBrains / Vim / macOS junk
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Terraform / OpenTofu version constraint file (optional, usually committed)
+# .terraform-version     ← usually you DO commit this one
+# .tofu-version          ← commit this if you use OpenTofu exclusively
+
+# Local backend config (if you ever switch from remote)
+local-backend.tf
+
+# Auto-generated provider versions file
+.versions.tf
